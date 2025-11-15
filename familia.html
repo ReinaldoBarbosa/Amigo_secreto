@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Família</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+
+        <img src="./assest/papai-noel_1.png" class="papai-noel" alt="Papai Noel">
+
+        <h1 class="titulo">Familia</h1>
+
+        <label class="label">Responsavel</label>
+        <div class="input-box">
+            <img src="./assest/profile.png" class="icon">
+            <input type="text" placeholder="Nome">
+        </div>
+
+        <label class="label">Membros</label>
+        <div class="input-box">
+            <img src="./assest/profile.png" class="icon">
+            <input type="text" placeholder="Nome">
+        </div>
+
+        <div class="input-box add">
+            <img src="./assest/add.png" class="icon">
+            <span>Adicionar Membro</span>
+        </div>
+
+         <button onclick="finalizarCadastro()">Finalizar Cadastro</button>
+
+        <img src="./assest/boneco_de_neve.png" class="boneco">
+
+    </div>
+    </div>
+    
+
+</body>
+
+<script>
+    function finalizarCadastro() {
+        const fluxo = localStorage.getItem("fluxo");    
+            alert("Cadastro realizado com sucesso!");
+            window.location.href = "finalizado.html";
+        }
+    
+</script>
+</html>

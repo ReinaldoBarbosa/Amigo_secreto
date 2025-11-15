@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Amigo Secreto</title>
+    <link rel="stylesheet" href="Style.css">
+
+    <!-- Fonte usada no layout -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-overlay"></div>
+
+    <div class="container">
+
+        <img src="./assest/papai-noel_1.png" class="papai-noel" alt="Papai Noel">
+
+        <div class="card">
+            <h1>Cadastro</h1>
+
+            <label>Nome</label>
+            <input type="text" placeholder="Seu nome">
+
+            <label>Email</label>
+            <input type="email" placeholder="Seu email">
+
+            <label>Opções de Presente</label>
+            <input type="text" placeholder="Opção 1">
+            <input type="text" placeholder="Opção 2">
+            <input type="text" placeholder="Opção 3">
+
+            <button onclick="finalizarCadastro()">Finalizar Cadastro</button>
+
+            <img src="./assest/boneco_de_neve.png" class="boneco" alt="Boneco de neve">
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+    function finalizarCadastro() {
+        const fluxo = localStorage.getItem("fluxo");
+
+        if (fluxo === "solo") {
+            alert("Cadastro realizado com sucesso!");
+            window.location.href = "finalizado.html";
+            // aqui você poderia finalizar o fluxo real do seu site
+        } 
+        
+        else if (fluxo === "familia") {
+            // redireciona para outra página
+            window.location.href = "familia.html";
+        }
+    }
+</script>
+
+
+</html>
