@@ -239,7 +239,6 @@ button:hover {
 
 /* Botão */
 .btn {
-    width: 80%;
     padding: 12px;
     font-size: 18px;
     color: white;
@@ -270,4 +269,5 @@ button:hover {
     bottom: 20px;
     right: -10px;
     z-index: 10;
+
 }
